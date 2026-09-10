@@ -1,0 +1,6 @@
+{
+  "name": "APK Slot Online",
+  "description": "Mobile-ready online slot machine simulator featuring authentic tumble reels, lightning multipliers, free spins bonus rounds, RTP tracker, and PWA install.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

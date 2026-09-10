@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1035"/>
+      <stop offset="50%" stop-color="#0f0720"/>
+      <stop offset="100%" stop-color="#070210"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE259"/>
+      <stop offset="100%" stop-color="#FFA751"/>
+    </linearGradient>
+    <linearGradient id="redG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff416c"/>
+      <stop offset="100%" stop-color="#8a0022"/>
+    </linearGradient>
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  
+  <!-- Rounded App Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  
+  <!-- Border Rim -->
+  <rect x="12" y="12" width="488" height="488" rx="100" fill="none" stroke="url(#gold)" stroke-width="8" opacity="0.8"/>
+  <rect x="24" y="24" width="464" height="464" rx="88" fill="none" stroke="#6b21a8" stroke-width="2" opacity="0.5"/>
+
+  <!-- Crown / Top Feature -->
+  <path d="M176 140 L216 190 L256 120 L296 190 L336 140 L330 220 L182 220 Z" fill="url(#gold)" filter="url(#glow)"/>
+  <circle cx="176" cy="135" r="10" fill="#FFE259"/>
+  <circle cx="256" cy="115" r="12" fill="#FFE259"/>
+  <circle cx="336" cy="135" r="10" fill="#FFE259"/>
+
+  <!-- Golden 777 Graphic -->
+  <g id="sevens" transform="translate(0, 40)">
+    <!-- Center 7 -->
+    <path d="M220 230 H292 L250 350 H220 L254 256 H220 Z" fill="url(#gold)" filter="url(#glow)"/>
+    <!-- Left 7 -->
+    <path d="M140 245 H196 L164 340 H140 L166 266 H140 Z" fill="url(#redG)" opacity="0.9"/>
+    <!-- Right 7 -->
+    <path d="M316 245 H372 L340 340 H316 L342 266 H316 Z" fill="url(#neonCyan)" opacity="0.9"/>
+  </g>
+
+  <!-- Sparkles -->
+  <polygon points="120,170 125,185 140,190 125,195 120,210 115,195 100,190 115,185" fill="#FFE259"/>
+  <polygon points="390,170 395,185 410,190 395,195 390,210 385,195 370,190 385,185" fill="#FFE259"/>
+  <polygon points="256,400 260,410 270,414 260,418 256,428 252,418 242,414 252,410" fill="#00f2fe"/>
+
+  <!-- APK Badge Banner -->
+  <rect x="136" y="415" width="240" height="50" rx="25" fill="url(#gold)"/>
+  <text x="256" y="448" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="24" fill="#1e1035" text-anchor="middle" letter-spacing="4">APK SLOT</text>
+</svg>
